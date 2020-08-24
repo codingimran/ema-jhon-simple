@@ -1,0 +1,29 @@
+h1 {
+  margin: 0;
+}
+
+.product-main-container {
+  /* width: 960px; */
+  /* margin: ; */
+  /* border-right: 1px solid rgba(128, 128, 128, 0.445); */
+  /* overflow: hidden; */
+}
+
+.cart-btn {
+  background-color: #f0c14b;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  width: 200px;
+  height: 26px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.order-main-container {
+  width: 400px;
+  /* border-left: 1px solid gray; */
+  text-align: center;
+}

@@ -1,0 +1,15 @@
+.shop-container {
+  /* display: flex; */
+}
+
+.product-container {
+  width: 70%;
+  /* margin: 0 5px 0 20px; */
+  margin-right: 5px;
+  padding-right: 50px;
+  border-right: 1px solid lightgray;
+}
+
+.cart-container {
+  font-size-adjust: inherit;
+}
