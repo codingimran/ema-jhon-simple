@@ -4,13 +4,19 @@ import "tachyons";
 import "./Cart.css";
 const CartItems = (props) => {
   const cart = props.cartAddedProduct;
-  const totalPrice = cart.reduce((total, product) => total + product.price, 0);
+  console.log(cart);
+  console.log(cart);
+  const totalPrice = cart.reduce(
+    (total, product) => total + product.price * product.quantity,
+    0
+  );
+  // debugger;
   const totalShiping = cart.reduce(
     (total, product) => total + product.shipping,
     0
   );
   const tax = ((totalPrice + totalShiping) * 0.1).toFixed(2);
-  console.log(tax);
+  // console.log(tax);
   // total without tax
   const totalWithOutTax = parseFloat(totalPrice + totalShiping).toFixed(2);
   // total with tax
@@ -51,12 +57,7 @@ const CartItems = (props) => {
         </tbody>
       </table>
       <div className="tc">
-        <button
-          className="btn-place-order mt3"
-          onClick={() => alert("Order Placed Hurry!.........")}
-        >
-          Place Order
-        </button>
+        {props.children}
         <marquee className="mt5 f1">Imran Khan</marquee>
       </div>
     </div>
